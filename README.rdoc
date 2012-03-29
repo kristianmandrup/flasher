@@ -1,6 +1,24 @@
-= flasher
+= Flasher
 
-Description goes here.
+Includes a small flasher helper in your base controller in order to do translations for flash messages using the Rails locale standard:
+
+		config/locales/flash/[controller]/[country_code].yml
+
+Content of YAML flash translation file:
+
+		en:
+		  flash:
+		    redemptions:
+		      success: "The voucher has been redeemed"
+		      code_invalid: "Invalid voucher code"
+		      code_already_used: "The voucher has already been redeemed"
+		      unknown_voucher: "No voucher could be found for the reference no."
+
+Then use it in your controller, here in the RedemptionsController
+
+		<%= flash_t('.success') %>
+
+Enjoy!
 
 == Contributing to flasher
  
