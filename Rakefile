@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "flasher"
   gem.homepage = "http://github.com/kristianmandrup/flasher"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Translate your flash messages using Rails locale files}
+  gem.description = %Q{A little Rails helper for translating flash messages}
   gem.email = "kmandrup@gmail.com"
   gem.authors = ["Kristian Mandrup"]
   # dependencies defined in Gemfile

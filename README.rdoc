@@ -1,6 +1,6 @@
 = Flasher
 
-Includes a small flasher helper in your base controller in order to do translations for flash messages using the Rails locale standard:
+Includes a small flasher helper in your base controller in order to do translations for flash messages that use the Rails 3 I18n locales infrastructure:
 
 		config/locales/flash/[controller]/[country_code].yml
 
