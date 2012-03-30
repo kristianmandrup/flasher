@@ -20,6 +20,24 @@ Then use it in your controller, here in the RedemptionsController
 
 Enjoy!
 
+== Rails 3 Generators
+
+Flasher now includes a few generators to get started
+
+=== Install
+
+$ rails g flasher:install
+
+Generator to create controller flash locale folder with locale files.
+
+=== Generate flash locales
+
+$ rails g flasher:locale controller --locales locale1 locale2
+
+Example:
+
+$ rails g flasher:locale redemptions --locales da fr
+
 == Contributing to flasher
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
