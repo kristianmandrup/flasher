@@ -3,7 +3,7 @@ module Flasher
     class LocalesGenerator < ::Rails::Generators::Name
       attr_accessor :locale
 
-      class_option :locales, :type => :array, :default => [], :desc => "Locales to generate"
+      class_option :locales, :type => :array, :default => ['en'], :desc => "Locales to generate"
 
       def generate_locales
         locales.each do |locale|
@@ -14,6 +14,12 @@ module Flasher
 
       def source_path
         source_paths.first
+      end
+
+      protected
+
+      def locales
+        options[:locales] || ['en']
       end
     end
   end
